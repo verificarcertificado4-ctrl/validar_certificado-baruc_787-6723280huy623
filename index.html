@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baruc-Verificación de Certificados</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+            <div class="logo-placeholder">
+                <img src="logo.jpg" alt="logo Baruc" id=" logo">
+            </div>
+            <p class="lema">Centro de capacitación profesional Baruc del Perú</p>
+        </header>
+
+    <div class="container">
+        
+
+        <div class="sub-container">
+             <h2>Certificaciones digitales</h2>
+        
+            <label for="codigoInput">Para validar un Certificado, ingresa el número de registro y haz click en "Validar".</label>
+            <input type="text" id="codigoInput" placeholder="Ej: AAAA-000" required>
+            <button onclick="verificarCertificado()">Validar</button>
+
+        </div>
+
+    </div> 
+
+    <div id="certificado-resultado">
+        <p id="mensaje" class="mensaje"></p>
+        <img id="certificadoImagen" src="certi1.png" alt="Certificado Verificado">
+        <img id="certificadoImagen2" src="certi2.png" alt="Certificado Verificado">
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

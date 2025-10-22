@@ -1,0 +1,156 @@
+/* Estilos CSS */
+        body {
+            font-family: "Inter", sans-serif, Arial;
+            margin: 0;
+            padding: 0;
+            background-color: #848791;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .container {
+            background-color: #f4f4f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            margin: 0;
+            text-align: center;
+            display: flex;
+        }
+
+        .header {
+            margin-bottom: 20px;
+            display: flex;
+            background-color: #2D3240;
+            width: 100%;
+            margin-top: 0;
+            padding: 40px;
+        
+        }
+
+
+        .logo-placeholder {
+            width: 100px;
+            height: 100px;
+            background-color: #e0e0e0;
+            margin: 0 auto 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: #555;
+            overflow: hidden; /* Para que la imagen del logo se ajuste */
+        }
+
+        #logo {
+            max-width: 100%;
+            max-height: 100%;
+ 
+            border: 1px solid white;
+       
+        }
+
+
+        .lema {
+            font-style: italic;
+            color: white;
+            margin-bottom: 30px;
+            font-size: 3em;
+            margin-left: 30px;
+            margin-right: 40px;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #262B42;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: white;
+            color: black;
+            border: 0.5px solid #262B42;
+        }
+
+        #certificado-resultado {
+            margin-top: 30px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+            padding-left: 30px; padding-right: 20px;
+        }
+
+        #certificado-resultado img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            display: none; /* Inicialmente oculto */
+        }
+
+        .mensaje {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .mensaje.error {
+            color: red;
+        }
+
+        .mensaje.exito {
+            color: green;
+        }
+
+
+@media (max-width:400px){
+    .header {
+        padding-bottom: 10px; padding-top: 10px;
+    }
+    
+    .lema {
+        font-size: 1rem;
+        padding: 10px;
+        text-align: center;
+        margin-top: 0; margin-bottom: 0;
+    }
+
+    .logo-placeholder {
+        margin-left: 20px;
+        padding: 0;
+        
+        border-radius: 10%;
+        width: 100%;
+    }
+
+   .logo-placeholder img {
+    width: 100%;
+    object-fit: contain;
+   }
+
+    .container {
+        width: 80%;
+    }
+    
+}
